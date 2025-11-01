@@ -5,24 +5,25 @@ Struktura projektu
 
 emotion_recognition/
 │
-├── dataset/ # Zbiór danych – podfoldery z obrazami dla każdej emocji
-│ ├── angry/
-│ ├── happy/
-│ ├── sad/
-│ └── surprised/
+├── dataset/                # Zbiór danych – podfoldery z obrazami dla każdej emocji
+│   ├── angry/
+│   ├── happy/
+│   ├── sad/
+│   └── surprised/
 │
-├── csv_outputs/ # Folder, w którym zapisywane są pliki CSV po ekstrakcji punktów twarzy
+├── csv_outputs/            # Folder, w którym zapisywane są pliki CSV po ekstrakcji punktów twarzy
 │
-├── extract_single.py # Ekstrakcja punktów twarzy dla pojedynczej emocji
-├── extract_all.py # Automatyczne uruchamianie ekstrakcji dla wszystkich emocji
-├── extract_sum.py # Łączenie wszystkich plików CSV w jeden zbiorczy plik
-├── train_model.py # Trening modelu XGBoost na przygotowanych danych
-├── main.py # Uruchomienie rozpoznawania emocji z kamery w czasie rzeczywistym
+├── extract_single.py       # Ekstrakcja punktów twarzy dla pojedynczej emocji
+├── extract_all.py          # Automatyczne uruchamianie ekstrakcji dla wszystkich emocji
+├── extract_sum.py          # Łączenie wszystkich plików CSV w jeden zbiorczy plik
+├── train_model.py          # Trening modelu XGBoost na przygotowanych danych
+├── main.py                 # Uruchomienie rozpoznawania emocji z kamery w czasie rzeczywistym
 │
-└── models/ # Folder z zapisanym modelem i skalami
-├── emotion_model.xgb
-├── emotion_scaler.pkl
-└── emotion_labelencoder.pkl
+└── models/                 # Folder z zapisanym modelem i skalami
+    ├── emotion_model.xgb
+    ├── emotion_scaler.pkl
+    └── emotion_labelencoder.pkl
+
 
 Wymagania
 
